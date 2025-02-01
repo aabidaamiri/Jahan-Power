@@ -1,16 +1,42 @@
 import React, { useState } from 'react'
 import './App.css'
-import Header from '../Component/Header/Header'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import Home from '../Component/Home/Home'
 import About from '../Component/About/About'
+import Service from '../Component/Service/Service'
+import Herosection from '../Component/Herosection/Herosection'
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>,
+    children: [
+      {
+        path: "/",
+        element: <Herosection/>
+      },
+      {
+        path: "/about",
+        element: <About/>
+      },
+      {
+        path: "/service",
+        element: <Service/>
+      }
+     
+    ]
+  }
+])
+
 
 const App = () => {
 
   return (
     <div>
-      <Header/>
-      <Home/>
-      <About/>
+      <RouterProvider router={router}/>
     </div>
   )
 }

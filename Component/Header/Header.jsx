@@ -1,19 +1,21 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+
 
 const Header = () => {
     return (
         <div>
             <header className='header'>
-                <div className='col-xs-3'>
+                <div className='name col-sm-6'>
                  شرکت تولیدی المونیم و پی وی سی جهان پاور 
                 </div>
 
-                <div className='col-xs-6'>
-                    <nav>
+                <div className='col-sm-6'>
+                    <nav className='nav'>
                         <ul className='list-unstyled'>
-                            <a href="#home"><li>صفحه اصلی</li></a>
-                            <a href="%about"><li>درباره ما</li></a>
-                            <a href=""><li>خدمات ما</li></a>
+                            <Link to="/"><li>صفحه اصلی</li></Link>
+                            <Link to="/about"><li>درباره ما</li></Link>
+                            <Link to="/service"><li>خدمات ما</li></Link>
                             <a href=""><li>ارتباط با ما</li></a>
                         </ul>
                     </nav>

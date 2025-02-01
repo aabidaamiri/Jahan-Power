@@ -1,85 +1,118 @@
+:root{
+    --color: rgb(38, 47, 97);
+}
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Baloo Bhaijaan 2", serif;
+    direction: rtl;
 
 }
-
+/* Header section  */
 header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     font-family: "Baloo Bhaijaan 2", serif;
-    font-size: 25px;
-    font-weight: 600;
     font-style: normal;
 
     direction: rtl;
     text-align: right;
 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.158);
     width: 100%;
-    color: white;
+    color: var(--color);
     height: 90px;
     padding: 0 50px;
-    background-color: rgb(53, 78, 124);
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+   
+}
+header .name{
+    font-size: 25px;
+    font-weight: 600;
+}
+header .nav{
+    font-size: 20px;
+    font-weight: 600;
 }
 ul{
     float: right;
     display: flex; 
     margin-top: 15px;
-    gap: 45px;
+    gap: 55px;
 }
 li{
     float: right;
 }
 a{
     text-decoration: none;
-    font-size: 1.1rem;
-    color: white;
+    color: var(--color);
 }
 
+/* home section  */
 .home-body{
-    padding: 20px 0;
-    background-color: rgba(53, 78, 124, 0.26);
+    height: 105vh;
+}
+.slide-container img{
+    width: 1100px;
+    border: 2px solid var(--color);
 }
 
-.slider-container{
-    margin-left: 60px;
-    width: 90vw;
+/* About section */
+.about-body h1{
+    font-weight: 700;
+    margin-bottom: 20px;
 }
-
-.h1{
-    color: var(--textcolor);
-    font-weight: 850;
-    margin-top: 30px;
-    text-align: center;
+.about-container{
+    background-color: rgba(128, 128, 128, 0.048);
+    height: 80vh;
+    border-radius: 25px;
+    padding: 30px;
 }
-
-.photo {
-    max-width: 300px;
-    height: 200px;
-    margin: 10px;
-    border-radius: 10px;
-}
-
 
 
 @media screen and (max-width: 600px){
     nav{
         display: none;
     }
-    header{
-        font-size: 20px;
+    header .name{
+        font-size: 15px;
         padding: 5px;
     }
-    .slider-container{
-        margin-left: 20px;
+    .slide-container img{
+        width: 400px;
+        border: 2px solid var(--color);
     }
-    .photo{
-        height: 100px;
+  
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+    nav{
+        display: none;
+    }
+    header .name{
+        font-size: 20px;
+    }
+    .slide-container img{
+        width: 600px;
+        border: 2px solid var(--color);
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px){
+    header .name{
+        font-size: 20px;
+    }
+    header .nav{
+        font-size: 12px;
+    }
+    .slide-container img{
+        width: 800px;
+        border: 2px solid var(--color);
     }
 }
