@@ -43,7 +43,7 @@ const Herosection = () => {
         </div>
 
         <div className='alum container'>
-          <div className='row'>
+          <div>
             <div className='sub-heading'>
               <h2> <i><TbWindow /></i>  المونیم چیست؟  </h2>
             </div>
@@ -59,7 +59,7 @@ const Herosection = () => {
                 </p>
               </div>
 
-              <div>
+              <div className='alum-img'>
                 <img src="https://th.bing.com/th/id/R.af6d68b90769128d5afbb6dd39dac3f4?rik=on0lIoxm4xWGfw&pid=ImgRaw&r=0" alt="" />
               </div>
             </div>
