@@ -134,12 +134,11 @@ a{
         margin-bottom: 15px;
     }
     header .name{
-        font-size: 13px;
-        margin-left: 30px;
+        font-size: 15px;
     }
     .slide-container img{
         width: 340px;
-        height: 230px;
+        height: 220px;
         border: 2px solid var(--color);
     }
     .sub-heading h2{
