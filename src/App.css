@@ -10,6 +10,9 @@ body{
     direction: rtl;
 
 }
+.hello{
+    height: 100vh;
+}
 /* Header section  */
 header{
     position: sticky;
@@ -31,6 +34,10 @@ header{
     justify-content: space-between;
     align-items: center;
    
+}
+header h2{
+    display: none;
+    
 }
 header .name{
     font-size: 25px;
@@ -62,33 +69,103 @@ a{
     width: 1100px;
     border: 2px solid var(--color);
 }
+.alum{
+    background-color: rgba(128, 128, 128, 0.041);
+    border-radius: 15px;
+}
+.alum p{
+    font-size: 20px;
+}
+.sub-heading{
+    display: flex;
+}
+.sub-heading i{
+    font-size: 20px;
+    padding: 5px;
+}
+.sub-heading h2{
+    color: var(--color);
+    font-weight: 600;
+}
+.alum p{
+    font-size: 20px;
+    padding: 10px;
+}
+.alum-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.alum-container img{
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
 
-/* About section */
-.about-body h1{
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-.about-container{
-    background-color: rgba(128, 128, 128, 0.048);
-    height: 80vh;
-    border-radius: 25px;
-    padding: 30px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 600px){
+    body{
+        direction: rtl;
+        
+    }
+    .hello{
+        height: 40vh;
+    }
+    .herosection{
+        margin: 20px;
+    }
     nav{
         display: none;
     }
+    header h2{
+        display: flex;
+        font-size: 23px;
+        margin-bottom: 15px;
+    }
     header .name{
         font-size: 15px;
-        padding: 5px;
+        margin-left: 30px;
     }
     .slide-container img{
         width: 380px;
         height: 230px;
         border: 2px solid var(--color);
     }
+    .sub-heading h2{
+        font-size: 20px;
+    }
+    .sub-heading i{
+        font-size: 15px;
+    }
+    .alum p{
+        font-size: 17px;
+        padding: 10px;
+    }
+    .alum-container{
+        display: block;
+    }
+    .alum-container img{
+        margin-right: 40px;
+        width: 350px;
+        height: 200px;
+    }
+    
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px){
