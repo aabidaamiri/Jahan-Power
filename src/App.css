@@ -86,9 +86,9 @@ a{
     }
     .slide-container img{
         width: 400px;
+        height: 230px;
         border: 2px solid var(--color);
     }
-  
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px){
