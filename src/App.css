@@ -85,7 +85,7 @@ a{
         padding: 5px;
     }
     .slide-container img{
-        width: 400px;
+        width: 380px;
         height: 230px;
         border: 2px solid var(--color);
     }
