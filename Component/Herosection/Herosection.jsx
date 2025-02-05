@@ -5,6 +5,7 @@ import bb2 from '../../src/img/bb (2).jpeg'
 import bb3 from '../../src/img/bb (3).jpeg'
 import { SlHome } from "react-icons/sl";
 import { TbWindow } from "react-icons/tb";
+import card1 from "../../src/img/p7.png"
 
 
 const Herosection = () => {
@@ -25,7 +26,7 @@ const Herosection = () => {
     <div className='herosection'>
       <section className='home-body' id='home'>
         <br />
-        <div className="hello container">
+        <div className="hello container-fluid">
           <Slider {...settings}>
             <div className="col-xs-12 slide-container">
               <img className="img-rounded" src={bb1} alt="" />
@@ -42,7 +43,35 @@ const Herosection = () => {
           </Slider>
         </div>
 
-        <div className='alum container'>
+        <div className='container-fluid '>
+          <div className='cards'>
+            <div className='col-6 card-right'>
+              <div className='card-right-top'>
+                <div class="overlay"></div>
+                <h1>کلکین پی وی سی </h1>
+                <button className='btn btn-primary'>دیدن موارد بیشتر</button>
+              </div>
+
+              <div className='card-right-down'>
+                <div class="overlay"></div>
+                <h1>دروازه پی وی سی</h1>
+                <button className='btn btn-primary'>دیدن موارد بیشتر</button>
+
+              </div>
+
+
+            </div>
+            <div className='col-6 card-left'>
+              <div class="overlay"></div>
+              <h1>وسایل المونیمی</h1>
+              <button className='btn btn-primary'>دیدن موارد بیشتر</button>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div className='alum container-fluid'>
           <div>
             <div className='sub-heading'>
               <h2> <i><TbWindow /></i>  المونیم چیست؟  </h2>
@@ -55,7 +84,7 @@ const Herosection = () => {
                   ویژگی‌هایی چون شکل‌پذیری عالی، جوشکاری خوب، استحکام در برابر وزن بالا و خوردگی، سبب شده آلیاژهای المونیم کاربرد گسترده‌ای در سازه‌ها و صنایع مختلف داشته باشند.
                 </p>
                 <p>المونیم کاربردی‌ترین فلز بعد از آهن از نظر کیفیت و ارزش است و تقریبا در بیشتر صنایع استفاده می‌شود.  آلیاژهای این عنصر از قابلیت جوشکاری، پرسکاری، ماشینکاری، لحیم کاری سخت و لحیم کاری نرم برخوردارند. همچنین به ضورت پروفیل‌های ساختمانی و اکسترود شده، ورق، تسمه، فویل، مفتول و میله در بازار وجود دارند. گفتنی است برخی از آلیاژهای المونیم قابلیت جوشکاری ندارند.
-                  
+
                 </p>
               </div>
 

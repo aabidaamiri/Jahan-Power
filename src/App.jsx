@@ -10,6 +10,7 @@ import Service from '../Component/Service/Service'
 import Herosection from '../Component/Herosection/Herosection'
 
 const router = createBrowserRouter([
+  
   {
     path: "/",
     element: <Home/>,
